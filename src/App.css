@@ -1,0 +1,32 @@
+.container {
+  max-width: 1080px;
+  margin: 10px auto;
+}
+
+.day-time {
+  background-image: url("../public/icons/day.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.night-time {
+  background: url("../public/icons/night.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.weather-time-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* for average mobile dimension responsiveness */
+@media only screen and (max-width: 922px) {
+  .weather-time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

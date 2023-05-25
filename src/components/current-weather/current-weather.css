@@ -1,0 +1,165 @@
+.weather {
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 10px -2px 20px 2px #0000004d;
+    color: #ffffff;
+    background-color: #333;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    height: 200px;
+    display: block;
+    flex-direction: row;
+}
+
+/* for average mobile dimension responsiveness */
+@media screen and (max-width: 450px) {
+    .weather {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 150px;
+    }
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.city {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .city {
+        font-size: 25px;
+    }
+}
+
+.weather-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .weather-description {
+        font-size: 20px;
+    }
+}
+
+.weather-icon {
+    width: 110px;
+}
+
+/* for average mobile dimension responsiveness */
+@media screen and (max-width: 450px) {
+    .weather-icon {
+        position: absolute;
+        left: 270px;
+        top: 90px;
+    }
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .weather-icon {
+        width: 90px;
+    }
+}
+
+.temperature {
+    font-weight: 600;
+    font-size: 80px;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    .temperature {
+        margin-top: 20px;
+        font-size: 55px;
+    }
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .temperature {
+        margin-bottom: 1px;
+    }
+}
+
+.details {
+    width: 100%;
+    padding-left: 50px;
+}
+
+.parameter-row {
+    display: flex;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: right;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* for average mobile dimension responsiveness */
+@media screen and (max-width: 450px) {
+    .parameter-label {
+        font-size: 10px;
+        padding-right: 12px;
+        padding-left: 40px;
+    }
+}
+
+/* for average mobile dimension responsiveness */
+@media screen and (max-width: 450px) {
+    .details {
+        padding-left: 30px;
+    }
+}
+
+/* for average mobile dimension responsiveness */
+@media screen and (max-width: 450px) {
+    .parameter-row {
+        padding: 0;
+        margin: 1px;
+    }
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .parameter-label {
+        font-size: 15px;
+    }
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .details {
+        padding-left: 20px;
+    }
+}
+
+/* for tablet dimension responsiveness */
+@media screen and (max-width: 830px) {
+    .parameter-row {
+        font-size: 15px;
+        padding: 0;
+        margin: 2px;
+        padding-bottom: 2px;
+    }
+}
